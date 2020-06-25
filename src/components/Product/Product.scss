@@ -1,0 +1,27 @@
+.product {
+  padding: 0;
+  .card {
+    margin: 15px;
+
+    .card-title {
+      height: 50px;
+    }
+
+    .btn {
+      width: 100%;
+      background-color: transparent;
+      color: blue;
+      border-color: blue;
+      border-radius: 50px;
+
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: blue !important;
+        border-color: blue;
+        color: white;
+        box-shadow: none !important;
+      }
+    }
+  }
+}
