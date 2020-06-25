@@ -1,0 +1,4 @@
+// only-of-type works only with same tag, here a DIV
+.row.align-items-stretch .card:only-of-type {
+  height: 100%;
+}

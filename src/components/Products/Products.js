@@ -1,7 +1,8 @@
 import React from "react";
-import { Container, Row } from "react-bootstrap";
+import { Container, Row, CardGroup } from "react-bootstrap";
 import Product from "../Product";
 import Loading from "../Loading";
+import "./Products.scss";
 export default function Products(props) {
   const {
     products: { result, loading },
@@ -15,11 +16,13 @@ export default function Products(props) {
         ) : (
           result.map((product, index) => {
             return (
-              <Product
-                key={index}
-                product={product}
-                addProductCart={addProductCart}
-              />
+              <div className="col-md-4">
+                <Product
+                  key={index}
+                  product={product}
+                  addProductCart={addProductCart}
+                />
+              </div>
             );
           })
         )}

@@ -5,7 +5,7 @@ import "./Product.scss";
 export default function Product(props) {
   const { product, addProductCart } = props;
   return (
-    <Col xs={3} className="product">
+    <Col className="product">
       <Card>
         <Card.Img
           variant="top"

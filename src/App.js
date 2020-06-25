@@ -37,7 +37,9 @@ function App() {
         getProductsCart={getProductsCart}
         products={products}
       />
+
       <Products products={products} addProductCart={addProductCart} />
+
       <ToastContainer
         position="top-right"
         autoClose={5000}
