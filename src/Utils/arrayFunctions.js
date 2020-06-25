@@ -3,7 +3,7 @@ export const countDuplicatesItemArray = (value, array) => {
   let count = 0;
 
   array.forEach((arrayValue) => {
-    if (arrayValue === value) {
+    if (arrayValue == value) {
       count++;
     }
   });

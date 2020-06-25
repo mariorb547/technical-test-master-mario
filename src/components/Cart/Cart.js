@@ -43,7 +43,7 @@ export default function Cart(props) {
     if (!products.loading && products.result) {
       products.result.forEach((product) => {
         productData.forEach((item) => {
-          if (product.id === item.id) {
+          if (product.id == item.id) {
             const totalValue = product.price * item.quantity;
             totalPrecie = totalPrecie + totalValue;
           }
@@ -140,7 +140,7 @@ function CartContentProducts(props) {
 
   if (!loading && result) {
     return result.map((product, index) => {
-      if (idProductCart === product.id) {
+      if (idProductCart == product.id) {
         const quantity = countDuplicatesItemArray(product.id, idsProductCart);
         return (
           <RenderProduct
